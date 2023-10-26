@@ -2,12 +2,17 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
+type Details = {
+  createAt: Date,
+  updateAt: Date,
+}
+
 type Page = {
   title: string;
   likes: number;
   accounts: string[];
   status: string;
-  details?: object;
+  details?: Details;
 };
 
 const page1: Page = {

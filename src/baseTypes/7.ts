@@ -14,5 +14,5 @@ enum WeekDay {
 }
 
 function isWeekend(day: WeekDay): boolean {
-  return day === WeekDay.sat || day === WeekDay.sun ? true : false;
+  return day === WeekDay.sat || day === WeekDay.sun;
 }
